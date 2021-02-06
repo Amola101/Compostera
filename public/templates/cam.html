@@ -8,32 +8,38 @@
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
 	<title>AI Detector</title>
 	<link rel="stylesheet" href="../static/global.css" type="text/css" />
-	<link rel="stylesheet" href="cam.css">
+	<link rel="stylesheet" href="../static/index.css">
 	<script src="detector.js">
 	</script>
 </head>
 
 <body>
 	<header>
+        <a class="logo" href="/"><img src="/img/logo.png" alt="logo"></a>
 		<nav>
-			<a href="/">Home</a>
+
 			<a href="/cam">Compost Cam</a>
-			<a href="/temp">Thermometer</a>
+			<a href="#">Thermometer</a>
 			<div class="dropdown">
 				<button class="dropbtn">Composters</button>
 	   		<div class="dropdown-content">
-      	 <a href="/outdoor">Outdoor</a>
-      	 <a href="/indoor">Indoor</a>
+      	 <a href="javascript:void(0);">Outdoor</a>
+      	 <a href="javascript:void(0)">Indoor</a>
   	  	</div>
     	</div> 
   	</nav>
 	</header>
-  
-   <h1 class="intro">Welcome to Compostera's AI Camera Detector</h1>
-  <div class="btn-cont=">
-   <button type="button" onclick="init()" class="start">Start</button></div>
- <div id="webcam-container"></div>
- <div id="label-container"></div>
+    <div class="hero">
+        <div class="intro">
+        <h1>Welcome to Compostera's AI Camera Detector</h1>
+        <div class="btn-cont=">
+        <button type="button" onclick="init()" class="start">Start</button></div>
+        </div>
+        <img src="../img/hero.jpg" alt="hero image">
+    </div>
+
+    <div id="webcam-container"></div>
+    <div id="label-container"></div>
 </body>
 
 

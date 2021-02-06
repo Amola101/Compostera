@@ -46,7 +46,32 @@ button:hover {
 }
 
 
+
+.imgWrap {
+	width: 100%;
+	background-color: var(--black);
+	color: var(--white);
+}
+
+
+.videos{
+    /* background: red; */
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.iframe {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px;
+}
+
 @media only screen and (max-width: 900px) {
     .hero{justify-content: center;flex-wrap: wrap-reverse;}
     .hero img{width: 100%;}
+
 }
