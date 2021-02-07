@@ -191,3 +191,7 @@ nav .icon {
 	background: rgb(109, 110, 110);
 	transition: all .20s ease-out;
 }
+
+h4 {
+	font-weight: 600;
+}
