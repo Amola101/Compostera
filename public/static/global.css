@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--white: #FFFFFF;
+	--black: #191919;
+    --green: #51e264;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	background-color: var(--white);
+    /* background-image: linear-gradient(45deg, rgb(255,255,255) 0%,transparent 36%),repeating-linear-gradient(135deg, rgba(197, 197, 197,0.1) 0px, rgba(197, 197, 197,0.1) 1px,transparent 1px, transparent 11px),repeating-linear-gradient(45deg, rgba(197, 197, 197,0.1) 0px, rgba(197, 197, 197,0.1) 1px,transparent 1px, transparent 11px),linear-gradient(0deg, rgb(255,255,255),rgb(255,255,255)); */
+    background-image: repeating-linear-gradient(22.5deg, rgb(255,255,255) 0px, rgb(255,255,255) 30px,transparent 30px, transparent 32px),repeating-linear-gradient(112.5deg, rgb(255,255,255) 0px, rgb(255,255,255) 30px,transparent 30px, transparent 32px),linear-gradient(90deg, hsl(98,79%,38%),hsl(98,79%,38%));
+
+}
+
+.container {
+	margin: 0 auto;
+	height: 100%;
+	width: 70%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+}
+
+/* #headerOne {
+	text-shadow: 1px 1.3px 3px rgb(59, 59, 63);
+} */
+
+body::-webkit-scrollbar {
+	width: 5px;
+	background: rgb(174, 183, 184);
+}
+
+body::-webkit-scrollbar-track {
+	width: 5px;
+	background: rgb(143, 163, 165);
+	border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+	width: 5px;
+	background-color: rgb(61, 62, 82);
+	border-radius: 3px;
+}
+
+::selection {
+	background-color: rgb(102, 177, 218);
+}
+
+
+/* header */
+
+header{
+    height: fit-content;
+    padding: 20px;
+    background: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--green);
+}
+
+/*NAV-BAR*/
+.logo img{
+    position: relative;
+    height: 50px;
+}
+
+nav a {
+    float: left;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+	transition: all .30s ease-out;
+}
+
+nav .logo a{
+    padding: 0;
+
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropbtn {
+    font-size: 1rem;  
+    border: none;
+	border-radius: 0;
+    outline: none;
+    color: white;
+	cursor: pointer;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    padding: 10px 15px;
+}
+
+nav a:hover, .dropdown:hover .dropbtn {
+    background-color: #646469;
+	transition: all .30sn ease-out;
+}
+
+nav .icon {
+	display: none;
+}
+
+.c{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+		min-width: 117px;
+    background-color: white;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+	background-color: #646469;
+	color: var(--white);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	transition: all .30s ease-out;
+}
+
+.dropdown-content a:hover {
+	background: var(--black);
+	transition: all .30s ease-out;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+@media screen and (max-width: 620px) {
+	.container {width: 90%;}
+	body::-webkit-scrollbar, body::-webkit-scrollbar-track body::-webkit-scrollbar-thumb {
+	width: 4px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.container {width: 100%;}
+	body::-webkit-scrollbar, body::-webkit-scrollbar-track, body::-webkit-scrollbar-thumb {
+	width: 3.2px;
+	}
+}
+
+.btn {
+	background: var(--black);
+	color: var(--white) !important;
+	z-index: 5;
+	padding: 6px;
+	border-radius: 5px;
+	font-size: 14.4px;
+	cursor: pointer !important;
+	white-space: nowrap;
+	text-decoration: none;
+	transition: all .20s ease-out;
+}
+
+.btn:hover {
+	background: rgb(109, 110, 110);
+	transition: all .20s ease-out;
+}
+
+h4 {
+	font-weight: 600;
+}
