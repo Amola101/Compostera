@@ -9,6 +9,7 @@
 	<title>AI Detector</title>
 	<link rel="stylesheet" href="../static/global.css" type="text/css" />
 	<link rel="stylesheet" href="../static/index.css">
+	<link rel="stylesheet" href="/static/cam.css" type="text/css" />
 	<script src="detector.js">
 	</script>
 </head>
@@ -31,8 +32,11 @@
   </header>
 
 <div class="container">
-<div>Teachable Machine Image Model</div>
+<h3 class="text">Teachable Machine Image Model</h3>
 <button type="button" onclick="init()">Start</button>
+<div class="comp" id="comp">
+      <img src="" class="compostpic" id="compostpic">
+</div>
 <div id="webcam-container"></div>
 <div id="label-container"></div>
 </div>
@@ -87,7 +91,24 @@
         for (let i = 0; i < maxPredictions; i++) {
             const classPrediction =
                 prediction[i].className + ": " + prediction[i].probability.toFixed(2);
-            labelContainer.childNodes[i].innerHTML = classPrediction;
+            labelContainer.childNodes[i].innerHTML = classPredictionif 
+            
+            if (prediction[2].probability.toFixed(2) > 0.87) {
+              //it should open a page based on which variable reached the threshold aaa
+              webcam.stop();
+              document.getElementById("compostpic").src = "publicity/img/red.JPG";
+              
+            }
+            if (prediction[1].probability.toFixed(2) > 0.86) {
+              //it should open a page based on which variable reached the threshold aa
+              webcam.stop();
+              document.getElementById("compostpic").src = "publicity/img/goodposture.ALmost-red.JPG";
+              
+            if (prediction[0].probability.toFixed(2) > 0.87) {
+              //it should open a page based on which variable reached the threshold aa
+              webcam.stop();
+              document.getElementById("compostepic").src = "public/img/not-red.JPG";
+            }
         }
     }
 </script>

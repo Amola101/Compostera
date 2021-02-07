@@ -23,6 +23,6 @@ app.get('/outdoor', (req, res) => {
 	res.sendFile(__dirname + '/public/templates/outdoor.html');
 });
 
-app.listen(4141);
+app.listen(6969);
 
 // npm start in shell to initiate web server
