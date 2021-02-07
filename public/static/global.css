@@ -22,11 +22,6 @@ body {
 
 }
 
-.container {
-	margin: 0 auto;
-	height: 100%;
-	width: 70%;
-}
 
 h1, h2, h3, h4, h5, h6 {
 	text-align: center;
@@ -84,6 +79,7 @@ nav a {
     padding: 10px 15px;
     text-decoration: none;
 	transition: all .30s ease-out;
+	user-select: none;
 }
 
 nav .logo a{
@@ -195,3 +191,38 @@ nav .icon {
 h4 {
 	font-weight: 600;
 }
+
+/*@media only screen and (max-width: 620px) {
+	nav a:not(:nth-child(1)), nav a:not(:nth-child(2)) {
+		display: none;
+	}
+	nav {
+		overflow: visible;
+		height: max-content;
+	}
+  nav > a, .dropdown-content {
+		float: left !important;
+	}
+	nav > a.icon {
+		display: block;
+	}
+	nav.responsive a.icon {
+		position: absolute;
+		right: 0;
+		width: 10%;
+	}
+	.dropbtn {
+		display: none;
+	}
+	nav.responsive a, .dropdown-content a {
+		display: block !important;
+		text-align: left;
+		width: 100%;
+		float: none;
+	}
+	nav > .dropdown-content {
+		position: absolute;
+		left: 0;
+		right: 0;
+	}
+}*/
