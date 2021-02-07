@@ -4,6 +4,7 @@
     margin: 20px;
     border: 1px solid var(--black);
 }
+
 .container{
     padding: 100px 0;
 }
@@ -15,4 +16,9 @@
 }
 .btn{
     margin: 15px 0;
+    padding: 10px 20px;
+}
+
+.items > img {
+	max-height: 370px;
 }
