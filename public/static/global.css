@@ -189,8 +189,10 @@ ul{
     text-align: justify;
 }
 
-.footer h3:nth-child(2){
-    color: RED;
+
+.footer h2{
+    font-size: 18px;
+    margin: 50px 10px;
 }
 
 ul li{
