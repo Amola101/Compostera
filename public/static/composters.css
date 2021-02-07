@@ -5,10 +5,6 @@
     border: 1px solid var(--black);
 }
 
-.container{
-    padding: 100px 0;
-}
-
 .container img{
     width: 100%;
     margin-bottom: 20px;
@@ -28,4 +24,10 @@
 .items > .geobin-img {
 	margin: 0;
 	width: 97.6%;
+}
+
+h2 {
+	text-align: center;
+	margin: 50px 0;
+    color: var(--black);
 }

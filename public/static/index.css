@@ -48,14 +48,6 @@ button:focus{
     box-shadow: 3px 3px #1e5a26;
 }
 
-/* .btn-cont {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffd966;
-    padding-bottom: 10px;
-} */
-
 .imgWrap {
 	width: 100%;
 	color: var(--white);
@@ -96,8 +88,6 @@ h3 {
     background: var(--white);
 }
 
-
-/* keep media code at the bottom  */
 @media only screen and (min-width: 900px) {
     .hero p{
         max-width: 40vh;

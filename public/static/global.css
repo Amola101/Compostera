@@ -25,10 +25,6 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
-/* #headerOne {
-	text-shadow: 1px 1.3px 3px rgb(59, 59, 63);
-} */
-
 body::-webkit-scrollbar {
 	width: 5px;
 	background: rgb(174, 183, 184);
@@ -49,7 +45,6 @@ body::-webkit-scrollbar-thumb {
 ::selection {
 	background-color: rgb(102, 177, 218);
 }
-
 
 /* header */
 
@@ -196,8 +191,8 @@ ul li{
     cursor: pointer;
 }
 
-a {
-	color: rgb(36, 212, 224);
+li > a {
+	color: rgb(66, 182, 85) !important;
 	text-decoration: none;
 }
 
@@ -221,6 +216,8 @@ a:hover {
 
 .copyright{
     padding-top: 20px;
+	text-align: center;
+	margin: 0 auto;
 }
 
 .btn {
@@ -270,7 +267,7 @@ h4 {
 	nav > a.icon {
 		display: block;
 	}
-  nav > a, .dropdown-content {
+    nav > a, .dropdown-content {
 		float: left !important;
 	}
 	nav > img {
