@@ -14,22 +14,21 @@
 </head>
 
 <body>
-	<header>
-        <a class="logo" href="/"><img src="/img/logo.png" alt="logo"></a>
-		<nav>
-
+  <header>
+      <a class="logo" href="/"><img src="/img/logo.png" alt="logo"></a>
+		<nav class="navbar" id="topnav">
 			<a href="/cam">Compost Cam</a>
-			<a href="#">Thermometer</a>
+			<a href="/temp">Thermometer</a>
 			<div class="dropdown">
 				<button class="dropbtn">Composters</button>
 	   		<div class="dropdown-content">
-      	 <a href="javascript:void(0);">Outdoor</a>
-      	 <a href="javascript:void(0)">Indoor</a>
+      	 <a href="/outdoor">Outdoor</a>
+      	 <a href="/indoor">Indoor</a>
   	  	</div>
-    	</div> 
+    	</div>
+			<a href="javascript:void(0);" class="icon" onclick="navbar()"><i class="fa fa-bars"></i></a>
   	</nav>
-	</header>
-   
+  </header>
 
     <div id="webcam-container"></div>
     <div id="label-container"></div>
@@ -85,17 +84,17 @@
             const classPrediction =
                 prediction[i].className + ": " + prediction[i].probability.toFixed(2);
             labelContainer.childNodes[i].innerHTML = classPrediction
-            if (prediction[1].probability.toFixed(2) > 0.87) {
+            if (prediction[0].probability.toFixed(2) > 0.87) {
               //it should open a page based on which variable reached the threshold aaa
               webcam.stop();
-              window.open("kitchen_category.html");
+              
             }
-            if (prediction[0].probability.toFixed(2) > 0.87) {
+            if (prediction[1].probability.toFixed(2) > 0.87) {
               //it should open a page based on which variable reached the threshold aa
               webcam.stop();
             }
 
-            if (prediction[0].probability.toFixed(2) > 0.87) {
+            if (prediction[2].probability.toFixed(2) > 0.87) {
               //it should open a page based on which variable reached the threshold aa
               webcam.stop();
             }

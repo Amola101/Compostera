@@ -1,0 +1,83 @@
+.flexbox-container-1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.flexbox-item1{
+    width: 30%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-top: 3%;
+
+}
+
+.flexbox-item-1{
+    position: relative;
+    min-height: 450px;
+    align-items: center;
+}
+
+.img1{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 10px;
+    width: 50%;
+    min-height: 190px;
+}
+
+.flexbox-item-1 img{
+    width: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    position: relative;
+}
+
+.flexbox-item1 button{
+    display: inline;
+    margin-top: 101%;
+    position: relative;
+    background-color: #000;
+    padding: 8px 15px;
+    font-size: 3vw;
+    border: none;
+}
+
+.flexbox-item1 button:hover {
+    background-color: #a5ccb6;
+  }
+
+.flexbox-item-2 a{
+color: #000;
+text-decoration-line: none;
+}
+
+
+.flexbox-item-3{
+    position: relative;
+    min-height: 450px;
+    align-items: center;
+}
+
+
+.flexbox-item-3 img{
+    width: 440px;
+    margin: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    position: relative;
+}
+
+
+.flexbox-item-3 a{
+color: #000;
+text-decoration-line: none;
+}
