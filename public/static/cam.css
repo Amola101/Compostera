@@ -1,56 +1,36 @@
+ h2{
+    color: white;
+}
 
-/*BODY*/
-/*
-.intro{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.box2{
+    padding: 20px;
+    padding-left: 40px;
+    border: 1.5px solid var(--black);
+    background: var(--white);
+    margin: 10px;
+}
+
+li{
+    padding: 10px 5px;
+}
+
+.hero2{
     width: 100%;
-    flex-direction: column;
-    background-color: var(--green);
+    height: fit-content;
+    background: var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-image: linear-gradient(330deg, rgba(225, 225, 225, 0.05) 0%, rgba(225, 225, 225, 0.05) 33.333%,rgba(114, 114, 114, 0.05) 33.333%, rgba(114, 114, 114, 0.05) 66.666%,rgba(52, 52, 52, 0.05) 66.666%, rgba(52, 52, 52, 0.05) 99.999%),linear-gradient(66deg, rgba(181, 181, 181, 0.05) 0%, rgba(181, 181, 181, 0.05) 33.333%,rgba(27, 27, 27, 0.05) 33.333%, rgba(27, 27, 27, 0.05) 66.666%,rgba(251, 251, 251, 0.05) 66.666%, rgba(251, 251, 251, 0.05) 99.999%),linear-gradient(225deg, rgba(98, 98, 98, 0.05) 0%, rgba(98, 98, 98, 0.05) 33.333%,rgba(222, 222, 222, 0.05) 33.333%, rgba(222, 222, 222, 0.05) 66.666%,rgba(228, 228, 228, 0.05) 66.666%, rgba(228, 228, 228, 0.05) 99.999%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
 }
 
-button {
-  display: inline;
-  background-color: #DBF2E5;
-  padding: 8px 30px;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 3.5px 3.5px #9AC6AD;
-  font-size: 2.3vw;
-  font-family: 'Quicksand', sans-serif;
-  color: #3F374D;
+.hero2 img{
+    height: 50vh;
 }
 
-button :hover {
-  background-color: #EFD1D6;
-  box-shadow: 3.5px 3.5px #9D898C;
+@media screen and (max-width: 800px) {
+    .hero2 img{width: 90%;max-width: 400px;}
+    .hero2{padding: 30px 0;}
 }
 
-.btn-cont {
- display: flex;
- align-items: center;
- justify-content: center;
-  background-color: #ffd966;
-  padding-bottom: 10px;
-}
-
-html {
-  scroll-behavior: smooth;
-} */
-
-
-button {
-	margin: 0 auto;
-}
-
-.text {
-	text-align: center;
-}
-
-h3 {
-	background: transparent !important;
-	border: none;
-	padding: 0px;
-}

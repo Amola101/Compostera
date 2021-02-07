@@ -48,19 +48,9 @@ button:focus{
     box-shadow: 3px 3px #1e5a26;
 }
 
-.btn-cont {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffd966;
-    padding-bottom: 10px;
-}
-
 .imgWrap {
 	width: 100%;
-	background-color: var(--black);
 	color: var(--white);
-    background-image: linear-gradient(330deg, rgba(225, 225, 225, 0.05) 0%, rgba(225, 225, 225, 0.05) 33.333%,rgba(114, 114, 114, 0.05) 33.333%, rgba(114, 114, 114, 0.05) 66.666%,rgba(52, 52, 52, 0.05) 66.666%, rgba(52, 52, 52, 0.05) 99.999%),linear-gradient(66deg, rgba(181, 181, 181, 0.05) 0%, rgba(181, 181, 181, 0.05) 33.333%,rgba(27, 27, 27, 0.05) 33.333%, rgba(27, 27, 27, 0.05) 66.666%,rgba(251, 251, 251, 0.05) 66.666%, rgba(251, 251, 251, 0.05) 99.999%),linear-gradient(225deg, rgba(98, 98, 98, 0.05) 0%, rgba(98, 98, 98, 0.05) 33.333%,rgba(222, 222, 222, 0.05) 33.333%, rgba(222, 222, 222, 0.05) 66.666%,rgba(228, 228, 228, 0.05) 66.666%, rgba(228, 228, 228, 0.05) 99.999%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
 }
 
 .videos{
@@ -71,7 +61,7 @@ button:focus{
 .iframe {
     width: 100%;
     max-width: 400px;
-    margin: 10px;
+    margin: 10px 1%;
 }
 
 .features, .about {
@@ -94,12 +84,10 @@ h3 {
 	padding: 6px;
 	border-radius: 1px;
     margin: 10px;
-    height: 120px;
+    min-height: 120px;
     background: var(--white);
 }
 
-
-/* keep media code at the bottom  */
 @media only screen and (min-width: 900px) {
     .hero p{
         max-width: 40vh;
