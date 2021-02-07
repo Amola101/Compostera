@@ -149,10 +149,11 @@ nav .icon {
 }
 
 .footer{
-    width: 100%;
+    width: 100% !important;
     height: 100%;
-    margin-top: 50px;
+    margin-top: 50px !important;
     display: flex;
+	margin: 0;
     justify-content: space-evenly;
     padding: 20px 10px;
     flex-wrap: wrap-reverse;
@@ -171,9 +172,10 @@ nav .icon {
 	display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    text-align: justify;
 }
 
-ul {
+ul{
 	list-style-type: none;
     margin: 10px 20px;
 }
@@ -184,11 +186,17 @@ ul {
 	background: transparent;
 	border: none;
 	padding: 0;
+    text-align: justify;
+}
+
+.footer h3:nth-child(2){
+    color: RED;
 }
 
 ul li{
     font-size: 16px;
     cursor: pointer;
+    padding-top: 5px;
 }
 
 li > a {
@@ -255,7 +263,7 @@ h4 {
 	width: 3.2px;
 	}
 }
-
+/*
 @media only screen and (max-width: 620px) {
 	nav a:not(:nth-child(1)) {
 		display: none;
@@ -297,4 +305,22 @@ h4 {
 		left: 0;
 		right: 0;
 	}
+}*/
+
+.no {
+	margin-top: 50px !important;
+	margin-bottom: 70px !important;
+	margin: 0 auto;
+	border: 1px solid #000;
+	padding: 7px;
+	width: 40%;
+}
+
+.no > p {
+	text-align: justify;
+}
+
+.no > h3 {
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
